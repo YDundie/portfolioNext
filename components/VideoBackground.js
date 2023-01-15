@@ -30,14 +30,24 @@ const VideoBackground = ({ videoUrl }) => {
     <div>
       {isMobile() ? (
         <div>
-          <video onTouchMove={handleTouch} ref={playerRef} width="100%" muted autoPlay controls={false} onTimeUpdate={() => setTime(playerRef.current.currentTime)} onSeeked={() => setTime(playerRef.current.currentTime)}>
-            <source src={'./mobile.mp4'} type="video/mp4" />
+          <video
+            style={{ overflow: 'hidden' }}
+            onTouchMove={handleTouch}
+            ref={playerRef}
+            width="100%"
+            muted
+            autoPlay
+            controls={false}
+            onTimeUpdate={() => setTime(playerRef.current.currentTime)}
+            onSeeked={() => setTime(playerRef.current.currentTime)}
+          >
+            <source src={'./mobile.mp4'} type="video/mp4" style={{ overflow: 'hidden' }} />
             Your browser does not support the video tag.
           </video>
         </div>
       ) : (
-        <video onWheel={handleWheel} ref={playerRef} loop height="100%" onTimeUpdate={() => setTime(playerRef.current.currentTime)} onSeeked={() => setTime(playerRef.current.currentTime)} muted>
-          <source src={videoUrl} type="video/mp4" />
+        <video style={{ overflow: 'hidden' }} onWheel={handleWheel} ref={playerRef} loop height="100%" onTimeUpdate={() => setTime(playerRef.current.currentTime)} onSeeked={() => setTime(playerRef.current.currentTime)} muted>
+          <source src={videoUrl} type="video/mp4" style={{ overflow: 'hidden' }} />
           Your browser does not support the video tag.
         </video>
       )}
