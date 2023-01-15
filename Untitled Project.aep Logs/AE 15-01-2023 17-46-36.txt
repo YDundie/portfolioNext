@@ -1,8 +1,0 @@
-  15/01/2023 17:46:36: Starting composition “Comp 1”.
-
-  Output To: D:\myNewPortfolioVideo\copm.avi    15/01/2023 17:47:01: Finished composition “Comp 1”.
-
-
-  Total Time Elapsed: 24 Seconds
-Log closed on 15/01/2023 at 17:47:01
-
