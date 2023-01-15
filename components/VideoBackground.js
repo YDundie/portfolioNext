@@ -19,9 +19,9 @@ const VideoBackground = ({ videoUrl }) => {
 
   const handleTouch = (e) => {
     if (e.touches[0].clientY > lastY) {
-      playerRef.current.currentTime -= 0.02;
+      playerRef.current.currentTime -= 0.04;
     } else {
-      playerRef.current.currentTime += 0.02;
+      playerRef.current.currentTime += 0.04;
     }
     setLastY(e.touches[0].clientY);
   };
