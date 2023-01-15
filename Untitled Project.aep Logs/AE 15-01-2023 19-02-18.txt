@@ -1,0 +1,8 @@
+  15/01/2023 19:02:18: Starting composition “Comp 1”.
+
+  Output To: D:\myNewPortfolioVideo\mobile.avi      Render stopped by user.    15/01/2023 19:02:27: Finished composition “Comp 1”.
+
+
+  Total Time Elapsed: 7 Seconds
+Log closed on 15/01/2023 at 19:02:27
+
